@@ -27,7 +27,7 @@ C of subroutine gethelptext for specifics.
       program scan_context
 
       integer iuout,iuin
-      COMMON/OUTIN/IUOUT,IUIN
+      COMMON/OUTIN/IUOUT,IUIN,IEOUT
       character fileinput*72
       character fileoutput*72
       character outs*124
@@ -306,7 +306,7 @@ C Useful for parsing file paths.  Note to keep from
 C overwriting the string passed, deal with a copy.
       SUBROUTINE GETTOKENS(A,IW,WORDS)
       integer iuout,iuin
-      COMMON/OUTIN/IUOUT,IUIN
+      COMMON/OUTIN/IUOUT,IUIN,IEOUT
       CHARACTER*(*) A
       CHARACTER*42 WORDS(32)
       CHARACTER B*124,C*1,outs*248
@@ -402,7 +402,7 @@ C     LW     - maximum length of WORD
 
       SUBROUTINE EGETW(STRING,K,WORD,ACT,MSG,IER)
       integer iuout,iuin
-      common/OUTIN/IUOUT,IUIN
+      common/OUTIN/IUOUT,IUIN,IEOUT
 
       CHARACTER*(*) WORD, STRING, MSG
       CHARACTER ACT*1,A*1,loutstr*248,outs*124

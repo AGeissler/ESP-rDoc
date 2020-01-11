@@ -26,16 +26,16 @@ Simulationist address: not yet defined
 Simulationist city: not yet defined
 Simulationist postcode: not yet defined
 The climate is: ESP test climate and is held in:
-/home/jon/esru_03aug/esp-r/climate/clm67 with hour centred solar data.
+clm67 with hour centred solar data.
 An Integrated Performance View is incomplete or missing.
  
 Databases associated with the model:
  pressure distributions : pressc.db1
- materials              : /home/jon/esru_03aug/esp-r/databases/material.db3.a
- constructions          : /home/jon/esru_03aug/esp-r/databases/multicon.db3
+ materials              : material.db
+ constructions          : multicon.db
  plant components       : plantc.db1
- event profiles         : /home/jon/esru_03aug/esp-r/databases/profiles.db2.a
- optical properties     : optics.db2
+ event profiles         : profiles.db2.a
+ optical properties     : optics.db
  
  ____________________________________________________________
  

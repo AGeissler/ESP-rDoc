@@ -851,8 +851,8 @@ l.
  51.700   -0.500   # Latitude & Longitude (diff from meridian)
       2   0.200   # Site exposure & ground reflectivity
 * DATABASES
-*mat  /usr/esru/esp-r/databases/materials.db3.a
-*mlc  /usr/esru/esp-r/databases/multicon.db3
+*mat  /usr/esru/esp-r/databases/materials.db4.a
+*mlc  /usr/esru/esp-r/databases/multicon.db4
 *opt  /usr/esru/esp-r/databases/optics.db2
 *prs  /usr/esru/esp-r/databases/pressc.db1
 *evn  /usr/esru/esp-r/databases/profiles.db1

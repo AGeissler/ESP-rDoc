@@ -548,9 +548,9 @@ Examples are shown below:
   *pdb /usr/esru/esp-r/databases/plantc.db1 # plant template db
 
 or
-  *stdmat material.db3.a # standard materials database
-  *stdmlc multicon.db3   # standard constructions database
-  *stdopt optics.db2     # standard optical db
+  *stdmat material.db    # standard materials database
+  *stdmlc multicon.db    # standard constructions database
+  *stdopt optics.db      # standard optical db
   *stdprs pressc.db1     # standard pressure coef db
   *stdevn profiles.db2.a # standard event profiles db
   *stdpdb plantc.db1     # plant template db

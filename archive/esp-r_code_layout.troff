@@ -1019,7 +1019,7 @@ C output channel ITU (integer).
 C FDROOT: Given a file name (fstring) see if it contains a (path) and a (filen).
 C Note: mingw compilers require fstring to be declared length (not *(*).
       SUBROUTINE fdroot(fstring,path,filen)
-      COMMON/OUTIN/IUOUT,IUIN
+      COMMON/OUTIN/IUOUT,IUIN,IEOUT
       CHARACTER*(*) path,filen,fstring
 
 
@@ -1773,7 +1773,7 @@ C NOTE: uses compiler variable -DMINGW to signal .false.
 
 C usrhome: Find users home directory.
       subroutine usrhome(upath)
-      COMMON/OUTIN/IUOUT,IUIN
+      COMMON/OUTIN/IUOUT,IUIN,IEOUT
       character*(*) upath
 
 

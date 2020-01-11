@@ -15,10 +15,10 @@
 *site_loc,46.000, 0.000, 0.00 # latitude deg long-diff deg time-zone GMT
 *site_exp, 1, 0.36, 0.36, 0.28 # exposure-index (std) sky ground building views
 *ground_refl_annual, 0.200 # ground reflection (avg for year)
-*mat  ../dbs/material.db4.a # materials db
-*mlc  ../dbs/multicon.db5 # constructions db
-*stdopt  optics.db2 # optical db
-*stdprs  pressc.db1 # pressure coef db
+*stdmat  material.db # materials db
+*stdmlc  multicon.db # constructions db
+*stdopt  optics.db   # optical db
+*stdprs  pressc.db1  # pressure coef db
 *stdevn  profiles.db2.a # profiles db
 *stdmscldb  mscomp.db1 # miscel cmp db
 *stdmould  mould.db1 # mould isopleths

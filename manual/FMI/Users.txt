@@ -158,22 +158,32 @@ If there is a flow network, signals from on/off flow network controls
 that are set to sense air point temperature in the associated zone will 
 be overridden with this value. In this case the supplementary data is 
 not used.
-Note that if on/off controls are needed that sense temperature in the 
-associated zone but are not overridden by this value, this can be 
+Note that if on/off flow controls are needed that sense temperature in 
+the associated zone but are not overridden by this value, this can be 
 achieved by setting the sensor to the appropriate flow node, rather 
 than the zone.
 Supplementary data:
-Fraction of scheduled infiltration controlled (fraction; 0.0 - 1.0)
+1. Fraction of scheduled infiltration controlled (fraction; 0.0 - 1.0)
 
 Zone equipment on (fraction; 0.0 (none) - 1.0 (full))
 This interacts with equipment casual gains; gains for the current time
 step are multiplied by this value.
 
-Zone thermostat (degrees C)
-This interacts with basic zone control only; the heating and cooling
-setpoints of the control are set to this value at each time step. If 
-there is not basic control in the associated zone, this will have no 
-effect.
+Zone thermostat (deg.C)
+This interacts with the following control functions:
+- basic zone control (zone law 1)
+- proportional plant control (laws 3 & 5) sensing thermostat or TRV
+  plant components (numbers 23 and 110)
+The heating and/or cooling setpoint(s) (according to supplementary data)
+of the control are set according to this value at each time step. This 
+will have no effect if none of the above controls apply to the associated 
+zone.
+Supplementary data:
+1. heating or cooling:
+   0 = set both heating and cooling setpoint
+   1 = set heating setpoint only
+   2 = set cooling setpoint only
+   3 = maintain delta between heating and cooling setpoints, set midpoint
 
 Zone blinds closed (binary; 0 = open, 1 = closed)
 This interacts with optical control; the binary control signal(s) from

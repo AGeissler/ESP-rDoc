@@ -1651,7 +1651,7 @@ C DOCUMENT NWKVEW
 C << still working on this >>
 
 C DOCUMENT OUTIN
-      COMMON/OUTIN/IUOUT,IUIN
+      COMMON/OUTIN/IUOUT,IUIN,IEOUT
 C << still working on this >>
 
 C DOCUMENT P1
@@ -2183,8 +2183,8 @@ C DOCUMENT VISFIL
       COMMON/VISFIL/LVEC,LBIT
 C << still working on this >>
 
-C DOCUMENT VLD20
-      COMMON/VLD20/VLDTNG
+C DOCUMENT OVRWT
+      COMMON/OVRWT/AUTOVR
 C << still working on this >>
 
 C DOCUMENT VTHP02
