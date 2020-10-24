@@ -87,7 +87,7 @@ the following should get most of what you need:
   sudo apt-get install cmake cmake-curses-gui cmake-extras
   
 If you extracted the source into a folder FMILibrary-2.0.1 you need to 
-create a folder build-fmil at the same level as FMILibrary-2.0.1 the 
+create a folder build-fmil at the same level as FMILibrary-2.0.1. The 
 build command would then take the form of:
   cd build-fmil
   cmake ../FMILibrary-2.0.1/
@@ -169,7 +169,7 @@ Zone equipment on (fraction; 0.0 (none) - 1.0 (full))
 This interacts with equipment casual gains; gains for the current time
 step are multiplied by this value.
 
-Zone thermostat (deg.C)
+Zone thermostat (degrees C)
 This interacts with the following control functions:
 - basic zone control (zone law 1)
 - proportional plant control (laws 3 & 5) sensing thermostat or TRV

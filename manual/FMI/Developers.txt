@@ -132,14 +132,11 @@ variable in ESP-r:
    * Outputs
      These are directives to implement some form of control within ESP-r
      based on data output from the FMU. Hence they cannot be implemented
-     in a single place, but are scattered throughout the ESP-r code. By
-     convention all code related to FMI is enclosed in comments like so:
-     C <FMI>
-       ...
-     C </FMI>
-     This can be used to find examples of output implementations.
-     In general, code should be contained in an if clause that tests the
-     value of boolean variable 
+     in a single place, but are scattered throughout the ESP-r code. 
+     Generally speaking, you can find instances by searching for 'FMI'
+     in the code. When writing new output implementations, code should
+     be contained in an if clause that tests the value of boolean
+     variable 
     FMUDOCTL([zone index],[output variable index defined in FMIrefs.h]).
      The value recieved from the FMU is in variable
      FMUCTL([zone index],[output variable index defined in FMIrefs.h]).
